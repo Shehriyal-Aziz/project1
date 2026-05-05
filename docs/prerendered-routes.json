@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "/project1": {},
+    "/project1/about": {},
+    "/project1/contact": {},
+    "/project1/gallery": {},
+    "/project1/googlesearch": {},
+    "/project1/list": {},
+    "/project1/login": {},
+    "/project1/search": {},
+    "/project1/service": {}
+  }
+}
