@@ -1,0 +1,9 @@
+ <h1>data fetched</h1>
+ <button (click)="fetchData()">Fetch Data</button>
+ <div>
+    <ul>
+  <li *ngFor="let item of myarr">
+    <p>Name: {{ item.name }}</p>
+  </li>
+</ul>
+  </div>

@@ -1,0 +1,24 @@
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        height: 100vh;
+        ;
+    }
+</style>
+<div class="container">
+    <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label class="w-100" >Search Here... 🔍
+    </mat-label>
+    <input type="text" matInput  [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      @for (option of filteredOptions | async; track option) {
+        <mat-option [value]="option">{{option.name}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+    <button (click)="search()" type="button" matButton="filled">Search</button>
+</form>
+</div>

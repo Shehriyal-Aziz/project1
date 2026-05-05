@@ -1,0 +1,77 @@
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+  <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+</div>
+<div class="container mt-4">
+    <h1>Gallery</h1>
+    <p>Welcome to the gallery page! Here you can find a collection of images and information about our products.</p>
+    <div>
+<div class="d-flex justify-content-center gap-2 mb-3">
+            <button (click)="laptopshow()"  class="btn btn-primary">Laptop</button>
+            <button (click)="mobileshow()"  class="btn btn-secondary">Mobile</button>
+            <button (click)="allshow()" class="btn btn-outline-secondary">All</button>
+        </div>
+    </div>
+    <div class="row fade-box" [class.hide]="!laptop">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="laptop1.webp" alt="">
+                <h3 class="card-title">Acer elite 465</h3>
+                <p class="card-text">The Acer Elite 465 is a powerful laptop for gaming and productivity.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="laptop2.webp" alt="">
+                <h3 class="card-title">Acer Aspire 5</h3>
+                <p class="card-text">Acer Aspire 5 is a great laptop for everyday use.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="laptop3.webp" alt="">
+                <h3 class="card-title">Acer Predator Helios 300</h3>
+                <p class="card-text">The Acer Predator Helios 300 is a high-performance gaming laptop.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- mobile -->
+ 
+<div class="row fade-box" [class.hide]="!mobile">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="mobile1.webp" alt="">
+                <h3 class="card-title">Iphone14</h3>
+                <p class="card-text">The Iphone14 is a powerful smartphone for gaming and productivity.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="mobile2.webp" alt="">
+                <h3 class="card-title">Samsung Galaxy S21</h3>
+                <p class="card-text">The Samsung Galaxy S21 is a high-end smartphone with excellent features.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="mobile3.webp" alt="">
+                <h3 class="card-title">Google Pixel 6</h3>
+                <p class="card-text">The Google Pixel 6 is a feature-rich smartphone with a great camera.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+

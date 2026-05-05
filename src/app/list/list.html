@@ -1,0 +1,15 @@
+
+
+    <h1 style="text-align: center;">List using api</h1>
+<div class="container">
+<div *ngFor=" let item of mylist" class="card">
+    <img  src="{{item.image}}" alt="Profile Photo">
+
+    <div class="card-content">
+        <h2 >{{item.firstName}}</h2>
+        <h3 >{{item.lastName}}</h3>
+        <p >📞 {{item.phone}}</p>
+    </div>
+</div>
+</div>
+
